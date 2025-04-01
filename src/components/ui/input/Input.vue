@@ -53,9 +53,9 @@ const handleInput = (event: Event) => {
 		:disabled="disabled"
 		:class="classes"
 		:name="name"
-		:aria-label="$attrs['aria-label']"
-		:aria-describedby="$attrs['aria-describedby']"
-		:aria-invalid="$attrs['aria-invalid']"
+		:aria-label="$attrs['aria-label'] as string | undefined"
+		:aria-describedby="$attrs['aria-describedby'] as string | undefined"
+		:aria-invalid="$attrs['aria-invalid'] as boolean | undefined"
 		v-bind="$attrs"
 		@input="handleInput"
 	/>
