@@ -20,7 +20,7 @@ const toggleDropdown = () => {
 <template>
 	<div class="relative inline-block">
 		<button
-			class="py-2 px-3 rounded-full bg-gray-100 cursor-pointer hover:bg-gray-200 focus:outline-none flex-row-reverse border-2"
+			class="py-2 px-3 rounded-full bg-gray-100 cursor-pointer hover:bg-gray-200 focus:outline-none flex-row-reverse border-1"
 			:aria-label="`${unreadCount}  notifications`"
 			:aria-expanded="false"
 			aria-haspopup="true"
@@ -28,7 +28,7 @@ const toggleDropdown = () => {
 		>
 			<span
 				v-if="unreadCount > 0"
-				class="absolute -top-1 -left-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center"
+				class="absolute -top-4 -left-3 bg-red-500 text-white text-xs font-bold rounded-full h-8 w-8 flex items-center justify-center"
 				aria-hidden="true"
 			>
 				{{ unreadCount > 99 ? "99+" : unreadCount }}

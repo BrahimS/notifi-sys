@@ -25,11 +25,11 @@ export default defineComponent({
 			</Header>
 			<Section>
 				<Article>
-					<notifications-widget namespace="Instance One" />
+					<notifications-widget namespace="Instance 1" />
 				</Article>
 
 				<Article>
-					<notifications-widget namespace="Instance Two" />
+					<notifications-widget namespace="Instance 2" />
 				</Article>
 			</Section>
 		</div>

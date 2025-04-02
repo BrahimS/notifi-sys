@@ -19,7 +19,7 @@ const notifications = computed(() => notificationStore.notifications);
 <template>
 	<section
 		aria-label="Notifications"
-		class="bg-white rounded-lg shadow-lg p-4 max-h-96 overflow-y-auto"
+		class="bg-white rounded-lg p-4 max-h-160 overflow-y-auto"
 	>
 		<Headline class="sr-only" :level="2" title="Notifications" />
 		<div

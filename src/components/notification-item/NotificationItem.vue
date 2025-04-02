@@ -27,7 +27,7 @@ const remove = () => {
 <template>
 	<article
 		:class="[
-			'p-4 mb-2 rounded-lg border-l-4 shadow-sm transition-all',
+			'p-4 mb-3 rounded-lg border-l-6 shadow-sm transition-all',
 			notification.read ? 'opacity-70' : 'opacity-100',
 			notification.type === 'success'
 				? 'border-green-500 bg-green-50'
@@ -52,7 +52,6 @@ const remove = () => {
 					:level="3"
 					:title="notification.title"
 				>
-					{{ notification.title }}
 				</Headline>
 				<p class="text-gray-700 mt-1">{{ notification.content }}</p>
 				<time class="text-xs text-gray-500 mt-2 block">
